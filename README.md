@@ -14,18 +14,6 @@
 
 `index.html` をブラウザで開くだけで動作します。
 
-## GitHub Pages 公開
-
-1. このリポジトリを GitHub に push
-2. Settings → Pages → Build and deployment
-3. Source を **GitHub Actions** に設定
-4. main ブランチに push すると自動公開
-
-公開URL例:
-
-- `https://<user>.github.io/<repo>/`
-
-## 補足
-
-- 生成は「中央マス周辺を安全地帯」にして開始しています。
-- サイズや地雷密度が高すぎると、可解盤面の探索に時間がかかります。
+## special thanks
+- [Minesweeper Orion Blog 必ず解けるマインスイーパー開発ブログ](https://minesweeper.kariya.cc/ja)
+- [14種類のマインスイーパーバリエーション](https://store.steampowered.com/app/1865060/14/)
