@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MineSweeper</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel controls">
+        <div class="control-row">
+          <label>
+            盤面の大きさ
+            <input id="sizeInput" type="number" min="5" max="20" value="5" />
+          </label>
+        </div>
+
+        <div class="control-row">
+          <label class="seed-label">
+            Seed
+            <input id="seedInput" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0〜2147483647" />
+          </label>
+          <button id="newGameBtn" type="button">新しい問題を生成</button>
+          <button id="copyUrlBtn" type="button">共有URLをコピー</button>
+        </div>
+      </section>
+
+      <section class="panel status" aria-live="polite">
+        <p>残り地雷数: <span id="remainingMines">-</span></p>
+        <p>時間: <span id="timerText">00:00</span></p>
+        <p id="message" class="message"></p>
+      </section>
+
+      <section class="board-wrap">
+        <div id="board" class="board" role="grid" aria-label="マインスイーパー盤面"></div>
+      </section>
+
+      <p class="hint">
+        左クリック: 開く / 右クリック: 旗 / 数字をクリック: 確定している周囲を自動展開
+      </p>
+    <p>special thanks: <a href="https://minesweeper.kariya.cc/ja/">https://minesweeper.kariya.cc/ja/</a></p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
